@@ -9,40 +9,39 @@
 </head>
 <body>
   <div class="start-section">
-    <input checked type="radio" name="respond" id="desktop">
-      <article id="slider-gallery">
+      <div class="slider-gallery">
         <input checked type="radio" name="respond" id="toggle1">
         <input type="radio" name="respond" id="toggle2">
         <input type="radio" name="respond" id="toggle3">
         <input type="radio" name="respond" id="toggle4">
         <input type="radio" name="respond" id="toggle5">
 
-        <div id="img-gallery">
-          <div id="overflow">
+        <div class="img-gallery">
             <div class="img">
-              <article><img src="./assets/img/1.jpg" alt=""></article>
-              <article><img src="./assets/img/2.jpg" alt=""></article>
-              <article><img src="./assets/img/3.jpg" alt=""></article>
-              <article><img src="./assets/img/4.jpg" alt=""></article>
-              <article><img src="./assets/img/5.jpg" alt=""></article>
+              <div class="img-slide img-1"><img src="./assets/img/1.jpg" alt=""></div>
+              <div class="img-slide img-3"><img src="./assets/img/3.jpg" alt=""></div>
+              <div class="img-slide img-4"><img src="./assets/img/4.jpg" alt=""></div>
+              <div class="img-slide img-5"><img src="./assets/img/5.jpg" alt=""></div>
+              <div class="img-slide img-2"><img src="./assets/img/2.jpg" alt=""></div>
             </div>
+        </div>
+        <div class="slider-text">
+          <div class="text">
+            <p class="img-slide img-1">Когда успешно сдал таск</p>
+            <p class="img-slide img-3">И прочитал тех.задание к следующему таску</p>
+            <p class="img-slide img-4">Составляешь план решения таска</p>
+            <p class="img-slide img-5">Устал, но добился цели...</p>
+            <p class="img-slide img-2">Ревьюер оценил по заслугам</p>
           </div>
         </div>
-        <div id="controlling">
+        <div class="respond">
           <label for="toggle1"></label>
           <label for="toggle2"></label>
           <label for="toggle3"></label>
           <label for="toggle4"></label>
           <label for="toggle5"></label>
         </div>
-        <div id="activity">
-          <label for="toggle1"></label>
-          <label for="toggle2"></label>
-          <label for="toggle3"></label>
-          <label for="toggle4"></label>
-          <label for="toggle5"></label>
-        </div>
-      </article>
+      </div>
   </div>    
 </body>
 </html>
