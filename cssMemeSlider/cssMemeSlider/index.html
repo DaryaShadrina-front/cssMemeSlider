@@ -8,40 +8,40 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-  <div class="start-section">
-      <div class="slider-gallery">
-        <input checked type="radio" name="respond" id="toggle1">
-        <input type="radio" name="respond" id="toggle2">
-        <input type="radio" name="respond" id="toggle3">
-        <input type="radio" name="respond" id="toggle4">
-        <input type="radio" name="respond" id="toggle5">
-
-        <div class="img-gallery">
-            <div class="img">
-              <div class="img-slide img-1"><img src="./assets/img/1.jpg" alt=""></div>
-              <div class="img-slide img-3"><img src="./assets/img/3.jpg" alt=""></div>
-              <div class="img-slide img-4"><img src="./assets/img/4.jpg" alt=""></div>
-              <div class="img-slide img-5"><img src="./assets/img/5.jpg" alt=""></div>
-              <div class="img-slide img-2"><img src="./assets/img/2.jpg" alt=""></div>
+  <h1 class="header"></h1>
+    <div class="start-section">
+      <div class="slider-gallery" role="slider">
+        <input type="radio" id="toggle1" name="respond__control" checked="checked">
+        <input type="radio" id="toggle2" name="respond__control">
+        <input type="radio" id="toggle3" name="respond__control">
+        <input type="radio" id="toggle4" name="respond__control">
+        <input type="radio" id="toggle5" name="respond__control">
+        <div class="img-gallery-content">
+            <div class="img__content">
+              <div class="slide slide-1"></div>
+              <div class="slide slide-2"></div>
+              <div class="slide slide-3"></div>
+              <div class="slide slide-4"></div>
+              <div class="slide slide-5"></div>
             </div>
         </div>
         <div class="slider-text">
-          <div class="text">
-            <p class="img-slide img-1">Когда успешно сдал таск</p>
-            <p class="img-slide img-3">И прочитал тех.задание к следующему таску</p>
-            <p class="img-slide img-4">Составляешь план решения таска</p>
-            <p class="img-slide img-5">Устал, но добился цели...</p>
-            <p class="img-slide img-2">Ревьюер оценил по заслугам</p>
+          <div class="text__description">
+            <p class="slide">Когда успешно сдал таск</p>
+            <p class="slide">И прочитал тех.задание к следующему таску</p>
+            <p class="slide">Составляешь план решения таска</p>
+            <p class="slide">Устал, но добился цели...</p>
+            <p class="slide">Ревьюер оценил по заслугам</p>
           </div>
         </div>
-        <div class="respond">
-          <label for="toggle1"></label>
-          <label for="toggle2"></label>
-          <label for="toggle3"></label>
-          <label for="toggle4"></label>
-          <label for="toggle5"></label>
+        <div class="respond__control">
+          <label class="respond__control-1" for="toggle1"></label>
+          <label class="respond__control-2" for="toggle2"></label>
+          <label class="respond__control-3" for="toggle3"></label>
+          <label class="respond__control-4" for="toggle4"></label>
+          <label class="respond__control-5" for="toggle5"></label>
         </div>
       </div>
-  </div>    
+    </div>    
 </body>
 </html>
