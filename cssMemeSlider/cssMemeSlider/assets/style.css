@@ -17,14 +17,14 @@ body {
     background-color: #F6F6F6; 
 }
 .start-section {
-    width: 600px;
-    height: 680px;
+    width: 37.5rem;
+    height: 42.5rem;
     margin: 2rem auto;
 }
 .slider-gallery {
     width: 100%;
     height: 100%;
-    position: relative;
+    position: static;
     background-color: #F6F6F6;
     overflow: hidden;
     display: grid;
@@ -56,7 +56,7 @@ body {
 }
 .img__content .slide {
     display: inline-block;
-    width: 600px;
+    width: 37.5rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -81,7 +81,7 @@ body {
 }
 .text__description .slide {
     display: inline-block;
-    width: 600px;
+    width: 37.5rem;
     height: 100%;
 }
 .respond__control {
@@ -149,3 +149,61 @@ body {
 #toggle5:checked ~ .respond__control .respond__control-5:before {
     background-color: #545454;
 }
+/*Start media*/
+@media screen and (max-width: 650px) {
+    .text__description {
+        font-size: 1rem;
+    }
+    .start-section {
+        width: 25rem;
+        height: 30rem;
+    }
+    .slider-gallery {
+      grid-template-rows: 3fr 40px 40px;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+      grid-template-areas:
+        'content'
+        'control'
+        'description';
+    }
+    .img__content .slide {
+        width: 25rem;
+    }
+    .respond__control {
+      justify-content: center;
+    }
+    .respond__control label {
+      margin-right: 1.2rem;
+    }
+    .respond__control label:last-of-type {
+      margin-right: 0;
+    }
+    .text__description .slide {
+        width: 25rem;
+        text-align: center;
+        padding: 0;
+    }
+    .respond__control label:before {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #toggle2:checked ~ .img-gallery-content .img__content,
+    #toggle2:checked ~ .slider-text .text__description {
+        transform: translateX(-400px);
+    }  
+    #toggle3:checked ~ .img-gallery-content .img__content,
+    #toggle3:checked ~ .slider-text .text__description {
+        transform: translateX(-800px);
+    }  
+    #toggle4:checked ~ .img-gallery-content .img__content,
+    #toggle4:checked ~ .slider-text .text__description {
+        transform: translateX(-1200px);
+    }
+    #toggle5:checked ~ .img-gallery-content .img__content,
+    #toggle5:checked ~ .slider-text .text__description {
+        transform: translateX(-1600px);
+    }
+}
+/*Stop media*/
